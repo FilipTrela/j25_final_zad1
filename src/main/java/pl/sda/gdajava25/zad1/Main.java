@@ -1,6 +1,7 @@
 package pl.sda.gdajava25.zad1;
 
 import pl.sda.gdajava25.zad1.counter.CountingWord;
+import pl.sda.gdajava25.zad1.scanner.LoadDataFromUser;
 
 /**
  * Stwórz aplikację która czyta tekst od użytkownika i "notuje" ile
@@ -17,7 +18,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Witam w aplikacji zliczającej wystąpienie słów [quit,score]");
         CountingWord countingWord = new CountingWord();
-        countingWord.CountingWordStart();
+        LoadDataFromUser loadDataFromUser = new LoadDataFromUser(countingWord);
+        loadDataFromUser.getStarted();
 
 
     }

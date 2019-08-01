@@ -14,15 +14,6 @@ import java.util.Set;
 
 public class CountingWord {
     private Map<String, Integer> wordCount = new HashMap<String, Integer>();
-    LoadDataFromUser scanner;
-
-    public CountingWord() {
-        this.scanner = new LoadDataFromUser(this);
-    }
-
-    public void CountingWordStart() {
-        scanner.getStarted();
-    }
 
 
     public void add(String comend) {
